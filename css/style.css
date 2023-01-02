@@ -1,0 +1,162 @@
+@charset 'utf-8';
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: hsl(217, 54%, 11%);
+    font-family: Outfit;
+    position: relative;
+}
+
+h1{
+    margin: 0;
+}
+
+main.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    min-width: 400px;
+    width: 20%;
+}
+
+.section{
+    background: hsl(216, 50%, 16%);
+    min-width: 400px;
+    width: 20%;
+    border-radius: 15px;
+    padding-bottom: 20px;
+}
+
+.show{
+    position: relative;
+    width: 90%;
+    height: 90%;
+    padding-left: 5%;
+}
+
+.section .image-container img{
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    border-radius: 15px;
+}
+
+.show .hide-image-container{
+    position: absolute;
+    top: 5%;
+    left: 5.3%;
+    opacity: 0%;
+    width: 94.7%;
+    height: 94%;
+    transition: opacity .2s;
+}
+
+.hide-image-container .background{
+    background-color: rgba(0, 255, 246, .5);
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.hide-image-container img{
+    position: absolute;
+    top: calc( 50% - 24px );
+    left: calc( 50% - 24px );
+}
+
+.show .hide-image-container:hover{
+    opacity: 100%;
+    cursor: pointer;
+}
+
+h1.title{
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+    margin-left: 5%;
+    margin-top: 5%;
+    transition: color .2s;
+}
+
+h1.title:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+.description{
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 15%;
+    color: hsl(215, 51%, 70%);
+    font-size: 20px;
+}
+
+.view{
+    margin-top: 7%;
+    margin-right: 10%;
+    margin-left: 5%;
+    display: flex;
+}
+
+.view .eth{
+    color: hsl(178, 100%, 50%);
+}
+
+.view .eth img{
+    vertical-align: -14%;
+}
+
+.view .time{
+    margin-left: auto;
+    color: hsl(215, 51%, 70%);
+}
+
+.view .time img{
+    vertical-align: -14%;
+}
+
+.border{
+    margin-top: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    border: .2px solid hsl(215, 51%, 70%);
+    opacity: .2;
+}
+
+.creator{
+    margin-top: 5%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.creator img{
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.creator .introduce{
+    margin-left: 5%;
+    color: hsl(215, 51%, 70%);
+}
+
+.creator .introduce .name{
+    transition: color .2s;
+}
+
+.creator .introduce .name:hover{
+    cursor: pointer;
+    color: hsl(178, 100%, 50%);
+}
+
+@media screen and ( max-width: 400px ){
+}
